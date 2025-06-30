@@ -22,7 +22,7 @@ router.post(
   [
     body("title", "Enter a valid title !").isLength({ min: 1 }),
     body("description", "Description must be at least 5 characters").isLength({
-      min: 3,
+      min: 1,
     }),
   ],
   async (req, res) => {
